@@ -588,6 +588,17 @@ $main-blue: #4EA1D9;
     padding: 0 15px;
   }
 }
+.flex-4{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  & > div{
+    flex: 1 1 25%;
+    max-width: 25%;
+    padding: 0 15px;
+  }
+}
 section.transfer{
   padding-bottom: 50px;
   .text{
@@ -711,4 +722,25 @@ section.transfer{
 }
 .conditions{
   padding: 50px 0;
+  .hint{
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  .flex-4{
+    padding: 30px 0;
+    .cond{
+      text-align: center;
+      svg{
+        width: 60px;
+      }
+    }
+  }
+  .steps{
+    ul{
+      margin-top: 30px;
+      li{
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
