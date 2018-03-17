@@ -471,4 +471,83 @@ section.transfer {
     height: 300px;
     margin-top: 30px; }
 
+.times {
+  background: #f3f3f3;
+  padding: 50px 0; }
+  .times__month {
+    text-align: right;
+    font-style: italic;
+    color: #4EA1D9;
+    font-size: 14px;
+    max-width: 980px;
+    margin: auto;
+    margin-top: 30px; }
+  .times .days-table, .times .times-table {
+    max-width: 980px;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    margin-top: 0; }
+    .times .days-table th, .times .times-table th, .times .days-table td, .times .times-table td {
+      border: 1px solid #50a2d9; }
+    .times .days-table th, .times .times-table th {
+      padding: 10px;
+      font-weight: bold; }
+    .times .days-table td, .times .times-table td {
+      padding: 40px;
+      position: relative; }
+      .times .days-table td .num, .times .times-table td .num {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        font-weight: bold; }
+      .times .days-table td:before, .times .times-table td:before {
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 30px;
+        left: 50%;
+        top: 50%;
+        margin-top: -15px;
+        margin-left: -15px;
+        border-radius: 100%;
+        background: transparent; }
+      .times .days-table td.arrive:before, .times .times-table td.arrive:before {
+        background: #FEDB00; }
+      .times .days-table td.green:before, .times .times-table td.green:before {
+        background: #005B45; }
+      .times .days-table td.blue:before, .times .times-table td.blue:before {
+        background: #4EA1D9; }
+  .times .times-table {
+    margin: 30px auto; }
+    .times .times-table td {
+      padding: 10px; }
+      .times .times-table td:nth-child(1) {
+        white-space: nowrap;
+        text-align: center; }
+    .times .times-table tr:nth-child(odd) td {
+      background: #eaeaea; }
+  .times .hints {
+    max-width: 980px;
+    margin: auto; }
+    .times .hints .r {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px; }
+      .times .hints .r .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        margin-right: 15px;
+        flex-shrink: 0; }
+        .times .hints .r .circle--yellow {
+          background: #FEDB00; }
+        .times .hints .r .circle--green {
+          background: #005B45; }
+        .times .hints .r .circle--blue {
+          background: #4EA1D9; }
+
+.conditions {
+  padding: 50px 0; }
+
 /*# sourceMappingURL=style.css.map */

@@ -601,3 +601,114 @@ section.transfer{
     margin-top: 30px;
   }
 }
+.times{
+  background: #f3f3f3;
+  padding: 50px 0;
+  &__month{
+    text-align: right;
+    font-style: italic;
+    color: $main-blue;
+    font-size: 14px;
+    max-width: 980px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .days-table{
+    max-width: 980px;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    margin-top: 0;
+    th, td{
+      border: 1px solid #50a2d9;
+    }
+    th{
+      padding: 10px;
+      font-weight: bold;
+    }
+    td{
+      padding: 40px;
+      position: relative;
+      .num{
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        font-weight: bold;
+      }
+      &:before{
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 30px;
+        left: 50%;
+        top: 50%;
+        margin-top: -15px;
+        margin-left: -15px;
+        border-radius: 100%;
+        background: transparent;
+      }
+      &.arrive{
+        &:before{
+          background: #FEDB00;
+        }
+      }
+      &.green{
+        &:before{
+          background: #005B45;
+        }
+      }
+      &.blue{
+        &:before{
+          background: $main-blue;
+        }
+      }
+    }
+  }
+  .times-table{
+    @extend .days-table;
+    margin: 30px auto;
+    td{
+      padding: 10px;
+      &:nth-child(1){
+        white-space: nowrap;
+        text-align: center;
+      }
+    }
+    tr:nth-child(odd){
+      td{
+        background: #eaeaea;
+      }
+    }
+  }
+  .hints{
+    max-width: 980px;
+    margin: auto;
+    .r{
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      .circle{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        margin-right: 15px;
+        flex-shrink: 0;
+        &--yellow{
+          background: #FEDB00;
+        }
+        &--green{
+          background: #005B45;
+        }
+        &--blue{
+          background: #4EA1D9;
+        }
+      }
+      p{
+
+      }
+    }
+  }
+}
+.conditions{
+  padding: 50px 0;
+}
