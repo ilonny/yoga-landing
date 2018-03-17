@@ -744,3 +744,33 @@ section.transfer{
     }
   }
 }
+.costs{
+  background: #f3f3f3;
+  padding: 50px 0;
+  &-table{
+    max-width: 980px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    td{
+      border: 1px solid $main-blue;
+      padding: 10px;
+    }
+  }
+  .warn-block{
+    padding: 15px;
+    border: 2px solid $main-blue;
+    border-radius: 10px;
+    max-width: 980px;
+    margin: auto;
+    .fa{
+      font-size: 30px;
+      color: #d43111;
+      display: block;
+      width: 30px;
+      margin: auto;
+    }
+    p{
+      margin-top: 10px;
+    }
+  }
+}

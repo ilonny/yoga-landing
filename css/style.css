@@ -573,4 +573,29 @@ section.transfer {
     .conditions .steps ul li {
       margin-bottom: 15px; }
 
+.costs {
+  background: #f3f3f3;
+  padding: 50px 0; }
+  .costs-table {
+    max-width: 980px;
+    margin: 30px auto;
+    border-collapse: collapse; }
+    .costs-table td {
+      border: 1px solid #4EA1D9;
+      padding: 10px; }
+  .costs .warn-block {
+    padding: 15px;
+    border: 2px solid #4EA1D9;
+    border-radius: 10px;
+    max-width: 980px;
+    margin: auto; }
+    .costs .warn-block .fa {
+      font-size: 30px;
+      color: #d43111;
+      display: block;
+      width: 30px;
+      margin: auto; }
+    .costs .warn-block p {
+      margin-top: 10px; }
+
 /*# sourceMappingURL=style.css.map */
