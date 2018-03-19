@@ -697,13 +697,13 @@ section.transfer {
       display: flex;
       align-items: center; }
       .staff .coach-block .hrefs .fa {
-        color: #FCD116;
+        color: #4EA1D9;
         font-size: 25px;
         text-decoration: none;
         margin-right: 15px;
         transition: all 250ms ease; }
         .staff .coach-block .hrefs .fa:hover {
-          color: #4EA1D9; }
+          color: #3996d4; }
     .staff .coach-block .img-wrap {
       min-width: 400px; }
       .staff .coach-block .img-wrap img {
@@ -727,5 +727,16 @@ section.transfer {
     .staff .coach-block--right .text {
       padding-left: 0;
       padding-right: 30px; }
+    .staff .coach-block .coach-button {
+      text-decoration: underline;
+      background: transparent;
+      border: none;
+      font-family: Open Sans;
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #004370; }
+      .staff .coach-block .coach-button:hover {
+        text-decoration: none;
+        cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

@@ -897,13 +897,13 @@ section.transfer{
       display: flex;
       align-items: center;
       .fa{
-        color: #FCD116;
+        color: $main-blue;
         font-size: 25px;
         text-decoration: none;
         margin-right: 15px;
         transition: all 250ms ease;
         &:hover{
-          color: $main-blue;
+          color: darken($main-blue, 5%);
         }
       }
     }
@@ -938,6 +938,19 @@ section.transfer{
       .text{
         padding-left: 0;
         padding-right: 30px;
+      }
+    }
+    .coach-button{
+      text-decoration: underline;
+      background: transparent;
+      border: none;
+      font-family: Open Sans;
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #004370;
+      &:hover{
+        text-decoration: none;
+        cursor: pointer;
       }
     }
   }
