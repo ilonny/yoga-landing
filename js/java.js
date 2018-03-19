@@ -32,7 +32,79 @@ $(document).ready(function(){
             enabled: true,
         }
     });
+    setCurrentPrice()
 })
+
+
+function setCurrentPrice(){
+    var currentDate = new Date;
+    currentMonth = currentDate.getMonth()+1;
+    currentDay = currentDate.getDate();
+    if (currentMonth == 3) {
+        $("#price-1").addClass("active")
+        var width = currentDay / 31 * 100;
+        $("#price-1 .circle").css("width", width+"%");
+        $("#price-1 .current-price").append("Осталось " + (31-currentDay) + ' дн.').css("bottom", "-30px")
+    }
+    if (currentMonth > 3 && currentMonth <= 8) {
+        $("#price-2").addClass("active")
+        var days4 = 30,
+            days5 = 31,
+            days6 = 30,
+            days7 = 31,
+            days8 = 31;
+        var days_sum = days4+days5+days6+days7+days8;
+        if (currentMonth == 4){
+            var days_p = currentDay;
+            var width = days_p / days_sum * 100;
+            console.log(days_p)
+            var days_o = days8 + days7 + days6 + days5 + (days4 - currentDay);
+        }
+        if (currentMonth == 5) {
+            var days_p = days4 + currentDay;
+            var width = days_p / days_sum * 100;
+            var days_o = days8 + days7 + days6 + (days5 - currentDay);            
+        }
+        if (currentMonth == 6) {
+            var days_p = days5 + days4 + currentDay;
+            var width = days_p / days_sum * 100;
+            var days_o = days8 + days7 + (days6 - currentDay);
+        }
+        if (currentMonth == 7) {
+            var days_p = days6 + days5 + days4 + currentDay;
+            var width = days_p / days_sum * 100;
+            var days_o = days8 + (days7 - currentDay);
+        }
+        if (currentMonth == 8) {
+            var days_p = days7 + days6 + days5 + days4 + currentDay;
+            var width = days_p / days_sum * 100;
+            var days_o = (days8 - currentDay);
+        }
+        $("#price-1 .circle").css({ width: "100%", opacity: 1, background: "#4EA1D9"});
+        $("#price-2 .circle").css("width", width + "%");
+        $("#price-2 .current-price").append("Осталось " + days_o + ' дн.').css("bottom", '-15px')
+    }
+    if (currentMonth == 9) {
+        $("#price-3").addClass("active")
+        var width = currentDay / 30 * 100;
+        $("#price-3 .circle").css("width", width + "%");
+        $("#price-3 .current-price").append("Осталось " + (30 - currentDay) + ' дн.')
+    }
+    if (currentMonth == 10) {
+        $("#price-4").addClass("active")
+        var width = currentDay / 31 * 100;
+        $("#price-4 .circle").css("width", width + "%");
+        $("#price-4 .current-price").append("Осталось " + (31 - currentDay) + ' дн.')
+    }
+    if (currentMonth > 10) {
+        $("#price-5").addClass("active")
+        var width = currentDay / 30 * 100;
+        $("#price-5 .circle").css("width", width + "%");
+        $("#price-5 .current-price").append("Осталось " + (30 - currentDay) + ' дн.')
+    }
+}
+
+
 function initMap() {
     var goa = { lat: 15.0099648, lng: 74.0232186 };
     var map = new google.maps.Map(document.getElementById('map'), {
