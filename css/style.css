@@ -268,6 +268,11 @@ body {
         opacity: 0.9; }
         .main-bg .content .show-more:hover i {
           animation: 800ms ease infinite keydown-anim; }
+  @media screen and (max-device-width: 900px) {
+    .main-bg {
+      min-height: 600px; }
+      .main-bg .content {
+        min-height: 600px; } }
 
 @keyframes keydown-anim {
   0% {

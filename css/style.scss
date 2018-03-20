@@ -342,6 +342,12 @@ $gradient: linear-gradient(to top right, #3992d5 0%, #61afdd 100%);
       }
     }
   }
+  @media screen and (max-device-width: 900px){
+    min-height: 600px;
+    .content{
+      min-height: 600px;      
+    }
+  }
 }
 @keyframes keydown-anim{
   0%{
