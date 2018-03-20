@@ -270,9 +270,9 @@ body {
           animation: 800ms ease infinite keydown-anim; }
   @media screen and (max-device-width: 900px) {
     .main-bg {
-      min-height: 600px; }
+      min-height: 800px; }
       .main-bg .content {
-        min-height: 600px; } }
+        min-height: 800px; } }
 
 @keyframes keydown-anim {
   0% {
