@@ -1,5 +1,5 @@
+new WOW().init();
 $(document).ready(function(){ 
-    // new WOW().init();
     $('.popup-with-zoom-anim').magnificPopup({
         type: 'inline',
         fixedContentPos: false,
@@ -20,7 +20,6 @@ $(document).ready(function(){
 		$(this).addClass('active');
 	})
 	$(document).on('click', '.tab-button', function(){
-        console.log(123)
         $(this).parents('.tabs').find('.tabs-content > div').hide();
 		$(this).parents('.tabs').find('.content-'+$(this).data('id')).fadeIn('fast');
     });
@@ -43,12 +42,29 @@ $(document).ready(function(){
             enabled: true,
         }
     });
-    setCurrentPrice()
     $(".coach-button").on('click', function(){
         setTimeout(function(){
             $(".slick-next").click();
         }, 300);
     })
+    $(".menu-hrefs a").on('click', function(e){
+        e.preventDefault();
+        var str = $(this).attr('href');
+        var selector = $('.'+str);
+        $('html, body').animate({
+            scrollTop: selector.offset().top-70
+        }, 250);
+    })
+    setCurrentPrice()
+    $("#callback-modal form").goldCarrotForm({
+		url: 'ajax/callback.php',
+    });
+    $("#scroll-buy, .invite .big-button, .pay-btn").on('click', function(){
+        // $('html, body').animate({
+        //     scrollTop: $(".invite .big-button").offset().top - 70
+        // }, 250);
+        $("#payment-form").submit();
+    });
 })
 
 

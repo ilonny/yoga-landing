@@ -194,7 +194,10 @@ body {
       .menu-top-right-phone {
         color: #fff;
         display: flex;
-        align-items: center; }
+        align-items: center;
+        width: 100%;
+        text-align: right;
+        justify-content: flex-end; }
         .menu-top-right-phone p {
           line-height: 12px;
           margin-left: 5px;
@@ -288,38 +291,6 @@ section {
   margin: 30px 0;
   font-weight: 600;
   font-size: 18px; }
-.how-it-been .video-wrap {
-  position: relative;
-  max-width: 980px;
-  margin: 0 auto;
-  margin-top: 30px; }
-  .how-it-been .video-wrap .play-button {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    transition: all 250ms ease; }
-    .how-it-been .video-wrap .play-button .fa {
-      font-size: 30px;
-      width: 100px;
-      height: 100px;
-      border: 2px solid #fff;
-      border-radius: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .how-it-been .video-wrap .play-button:hover {
-      background: rgba(0, 0, 0, 0.2);
-      cursor: pointer; }
-.how-it-been video {
-  max-width: 100%; }
 
 .tabs {
   max-width: 980px;
@@ -778,7 +749,7 @@ section.transfer {
     font-size: 18px;
     margin-bottom: 30px; }
   .std-modal .form-wrap input, .std-modal .form-wrap textarea {
-    width: 270px;
+    width: 100%;
     height: 44px;
     border: 1px solid #4EA1D9;
     padding-left: 10px;
@@ -786,7 +757,8 @@ section.transfer {
     transition: all 250ms ease;
     background: transparent;
     outline: none;
-    color: #000; }
+    color: #000;
+    margin-bottom: 20px; }
     .std-modal .form-wrap input:focus, .std-modal .form-wrap textarea:focus {
       border: 1px solid #3996d4; }
   .std-modal .form-wrap .inps {
@@ -852,5 +824,70 @@ section.transfer {
 
 .has-success {
   border: 1px solid #4EA1D9 !important; }
+
+.invite {
+  padding: 50px 0; }
+  .invite .big-button {
+    padding: 30px 130px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background: #4EA1D9;
+    cursor: pointer;
+    font-family: Open Sans;
+    margin-top: 30px;
+    font-size: 24px;
+    transition: all 250ms ease; }
+    .invite .big-button:hover {
+      background: #2b89c9; }
+
+.video-wrap {
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 30px; }
+  .video-wrap .play-button {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transition: all 250ms ease; }
+    .video-wrap .play-button .fa {
+      font-size: 30px;
+      width: 100px;
+      height: 100px;
+      border: 2px solid #fff;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .video-wrap .play-button:hover {
+      background: rgba(0, 0, 0, 0.2);
+      cursor: pointer; }
+
+video {
+  max-width: 100%; }
+
+footer {
+  padding: 15px 0;
+  background: #4EA1D9;
+  color: #fff;
+  font-size: 14px; }
+  footer .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  footer a {
+    color: #fff;
+    text-decoration: underline; }
+    footer a:hover {
+      text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
