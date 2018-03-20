@@ -1,5 +1,16 @@
 $(document).ready(function(){ 
-	// new WOW().init();
+    // new WOW().init();
+    $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
+        fixedContentPos: false,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        closeBtnInside: true,
+        preloader: false,
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+    });
 	$(document).on('click', '.video-wrap .play-button', function(){
 		$(this).fadeOut('fast');
 		$(this).prev()[0].play();
@@ -21,7 +32,7 @@ $(document).ready(function(){
             scrollTop: $(".how-it-been").offset().top-60
         }, 500)
     });
-    $("#gallery1, #gallery2").slick({
+    $("#gallery1, #gallery2, #gallery-coach-1").slick({
         slidesToShow: 3,
         slidesToScroll: 3,        
     });
@@ -33,6 +44,11 @@ $(document).ready(function(){
         }
     });
     setCurrentPrice()
+    $(".coach-button").on('click', function(){
+        setTimeout(function(){
+            $(".slick-next").click();
+        }, 300);
+    })
 })
 
 

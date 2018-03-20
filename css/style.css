@@ -739,4 +739,118 @@ section.transfer {
         text-decoration: none;
         cursor: pointer; }
 
+.std-modal {
+  width: 900px;
+  margin: auto;
+  position: relative;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px; }
+  .std-modal__title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px; }
+  .std-modal p {
+    text-indent: 15px;
+    margin-bottom: 10px; }
+    .std-modal p strong {
+      font-weight: bold; }
+    .std-modal p i {
+      font-style: italic; }
+    .std-modal p a {
+      color: #4EA1D9;
+      text-decoration: underline; }
+      .std-modal p a:hover {
+        text-decoration: none; }
+    .std-modal p tdu {
+      text-decoration: underline; }
+  .std-modal hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    margin: 30px 0;
+    background: #fff; }
+  .std-modal .form-wrap__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px; }
+  .std-modal .form-wrap input, .std-modal .form-wrap textarea {
+    width: 270px;
+    height: 44px;
+    border: 1px solid #4EA1D9;
+    padding-left: 10px;
+    color: #fff;
+    transition: all 250ms ease;
+    background: transparent;
+    outline: none;
+    color: #000; }
+    .std-modal .form-wrap input:focus, .std-modal .form-wrap textarea:focus {
+      border: 1px solid #3996d4; }
+  .std-modal .form-wrap .inps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .std-modal .form-wrap .inps-2 {
+      display: block; }
+      .std-modal .form-wrap .inps-2 input, .std-modal .form-wrap .inps-2 textarea {
+        display: block;
+        width: 49%;
+        height: 44px;
+        border: 1px solid #4EA1D9;
+        padding-left: 10px;
+        color: #fff;
+        transition: all 250ms ease;
+        background: transparent;
+        outline: none;
+        color: #000;
+        margin: auto;
+        margin-bottom: 20px; }
+        .std-modal .form-wrap .inps-2 input:focus, .std-modal .form-wrap .inps-2 textarea:focus {
+          border: 1px solid #3996d4; }
+  .std-modal .form-wrap textarea {
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    outline: none;
+    font-family: 'Open Sans'; }
+    .std-modal .form-wrap textarea:focus {
+      border: 1px solid #4EA1D9; }
+  .std-modal .form-wrap button {
+    width: 250px;
+    height: 40px;
+    border: none;
+    margin-top: 15px;
+    transition: all 250ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4EA1D9;
+    font-family: 'Open Sans';
+    color: #fff;
+    outline: none;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 100px; }
+    .std-modal .form-wrap button:hover {
+      background: #3996d4;
+      color: #fff;
+      cursor: pointer; }
+  .std-modal .img-wrap {
+    position: relative; }
+    .std-modal .img-wrap img {
+      max-width: 100%; }
+
+.has-error {
+  border: 1px solid red !important; }
+
+.has-success {
+  border: 1px solid #4EA1D9 !important; }
+
 /*# sourceMappingURL=style.css.map */
