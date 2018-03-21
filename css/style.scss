@@ -282,7 +282,11 @@ $gradient: linear-gradient(to top right, #3992d5 0%, #61afdd 100%);
     align-items: center;
     a{
       color: #fff;
-      padding: 10px;
+      padding: 0px 10px;
+      border-right: 1px solid #fff;
+      &:nth-last-child(1){
+        border: none;
+      }
     }
   }
 }
@@ -375,6 +379,7 @@ section{
   text-align: center;
 }
 .how-it-been{
+  padding: 50px 0;
   .tac{
     font-size: 18px;
     margin: 30px 0;
@@ -455,7 +460,6 @@ $main-blue: #4EA1D9;
 .place-section{
   padding-bottom: 50px;
   background: #f3f3f3;
-  margin-top: 50px;
   .map-wrap{
     &-top{
       display: flex;
