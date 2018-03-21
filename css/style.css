@@ -718,6 +718,23 @@ section.transfer {
       .staff .coach-block .coach-button:hover {
         text-decoration: none;
         cursor: pointer; }
+    .staff .coach-block .df {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .staff .coach-block .df .right {
+        display: flex;
+        align-items: center; }
+        .staff .coach-block .df .right .img-wrap {
+          min-width: initial;
+          width: 100px;
+          position: relative;
+          margin-right: 20px; }
+          .staff .coach-block .df .right .img-wrap img {
+            display: block;
+            max-width: 100%; }
+          .staff .coach-block .df .right .img-wrap:nth-last-child(1) {
+            margin-right: 0; }
 
 .std-modal {
   width: 900px;

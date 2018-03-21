@@ -1,4 +1,4 @@
-new WOW().init();
+// new WOW().init();
 $(document).ready(function(){ 
     $('.popup-with-zoom-anim').magnificPopup({
         type: 'inline',

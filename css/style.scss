@@ -929,6 +929,30 @@ section.transfer{
         cursor: pointer;
       }
     }
+    .df{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .left{
+      }
+      .right{
+        display: flex;
+        align-items: center;
+        .img-wrap{
+          min-width: initial;
+          width: 100px;
+          position: relative;
+          margin-right: 20px;
+          img{
+            display: block;
+            max-width: 100%;
+          }
+          &:nth-last-child(1){
+            margin-right: 0;
+          }
+        }
+      }
+    }
   }
 }
 .std-modal{
