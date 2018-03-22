@@ -252,7 +252,8 @@ body {
       font-size: 36px; }
     .main-bg .content .text {
       max-width: 700px;
-      margin: 30px 0; }
+      margin: 30px 0;
+      font-size: 18px; }
     .main-bg .content .show-more {
       position: absolute;
       width: 200px;
@@ -332,6 +333,14 @@ section {
       transform: rotate(45deg);
       opacity: 0;
       transition: all 250ms ease; }
+    .tabs .tab-button .left {
+      margin-right: 10px; }
+      .tabs .tab-button .left img {
+        width: 90px;
+        height: 90px;
+        border-radius: 100%; }
+    .tabs .tab-button .right {
+      font-size: 14px; }
     .tabs .tab-button.active {
       border: 2px solid #50a2d9; }
       .tabs .tab-button.active:before {
