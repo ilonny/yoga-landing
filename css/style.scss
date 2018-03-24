@@ -323,7 +323,7 @@ $gradient: linear-gradient(to top right, #3992d5 0%, #61afdd 100%);
     .text{
       max-width: 700px;
       margin: 30px 0;
-      font-size: 18px;
+      font-size: 22px;
     }
     .show-more{
       position: absolute;
@@ -351,6 +351,9 @@ $gradient: linear-gradient(to top right, #3992d5 0%, #61afdd 100%);
     min-height: 800px;
     .content{
       min-height: 800px;
+      .text{
+        font-size: 27px;
+      }
     }
   }
 }
